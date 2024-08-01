@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="demo.html">API Demo</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="about-section">
+                <h1>About This Work</h1>
+                <p>This page demonstrates how to interact with a JSON file on the server side using Express and fetch data to display it on the client side. Here’s a breakdown of the process:</p>
+                
+                <h2>Functionality Overview</h2>
+                <p>When the user clicks the "Load Data" button, the JavaScript code sends a GET request to the server's endpoint (`/api/details`). The server responds with JSON data, which is then dynamically displayed on the page in a well-formatted table.</p>
+                
+                <h2>Implementation Details</h2>
+                <ul>
+                    <li><strong>Server Side (Express):</strong> The server is set up using Express.js to serve static files and handle API requests. The JSON data is read from `data/data.json` and served at the `/api/details` endpoint.</li>
+                    <li><strong>Client Side (HTML/JavaScript):</strong> The client-side code includes an HTML button and JavaScript logic to fetch data from the server and display it in a table. The JavaScript uses `fetch` with async/await to handle the asynchronous request.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
